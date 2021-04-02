@@ -6,27 +6,26 @@
 import requests
 
 
-#Make an API request to https://api.nasa.gov and display some portion of the data returned in an easily read format
-API = "https://api.nasa.gov/planetary/apod?api_key=7cqHW801kCstlBsbcprRwwe01awpGk7XVVamgD0d"
-
-#Use matplotlib to produce a graph
-
+#globals
+API = "https://api.nasa.gov/planetary/apod?api_key=7cqHW801kCstlBsbcprRwwe01awpGk7XVVamgD0d" #API with my key
+NUMTODL = 10 # max number of pictures to DL
 
 
-#Write a guessing game that uses the crayons library to post in green YOU WIN when the correct answer is supplied
+#Make func to Nasa API request to https://api.nasa.gov and display some portion of the data returned in an easily read format
+def nasa():
+    
 
 
-#Use pandas to create a dataframe, and export some data into a format of your choice
+    #Use pandas to create a dataframe, and export some data into a format of your choice
+    
+    #Use matplotlib to produce a graph
+
+    #Anything else you find interesting!
 
 
-#Anything else you find interesting!
+    
 
-
-# max number of pictures to DL
-NUMTODL = 10
-
-def main():
-        counter = 0
+            counter = 0
         r = requests.get(API)
 
         # we want to grab the data off the 200 response
@@ -59,7 +58,22 @@ def main():
             if counter == NUMTODL:
                 break
 
+
+
+# Main will ask for user input to choose what app will run
+# One choice is Nasa API 
+# One choice is Color example
+
+def main():
+
+
 if __name__ == "__main__":
     main()
+
+
+
+
+#Write a guessing game that uses the crayons library to post in green YOU WIN when the correct answer is supplied
+
 
 
