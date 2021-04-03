@@ -1,7 +1,9 @@
 #! /usr/bin/python3
-"""This is a script by James Aaron Caldwell to demonstrate basic understanding of python scripting language"""
+"""This is a script by James Aaron Caldwell is for demonstrating the
+basic understanding of python scripting language through 3 examples.
+"""
 
-# Import examples using standard library
+# Import examples using standard library and other formatting libs
 import requests
 import json
 import pandas as pd
@@ -9,7 +11,7 @@ import matplotlib
 import crayons
 import time
 
-# global
+# global variable example
 API = "http://www.neowsapp.com/rest/v1/neo/2216523?api_key=7cqHW801kCstlBsbcprRwwe01awpGk7XVVamgD0d"  # API with my key
 
 
