@@ -42,16 +42,17 @@ def nasa():
     outFile.close() #closing file out
     print("File "+filename+" has been created in folder local to application.") #confirming end of function
 
-    
-#Use matplotlib for graphed data
+##############################################################################    
+#Use matplotlib for graphed data and save chart to pdf file
+##############################################################################
 def graph(): #need to customize to make unique
     
     N = 4
-    teensPhonetime = (55, 65, 30, 35, 44, 58) # length of time on phone (mins) - Teens
-    parentsPhonetime = (25, 32, 34, 20, 23, 32, 56) # length of time on phone (min) - Parents
+    teensPhonetime = (55, 65, 30, 35) # length of time on phone (mins) - Teens
+    parentsPhonetime = (25, 32, 34, 20) # length of time on phone (min) - Parents
     ran = np.arange(N)    # the x locations for the groups
     # the barWidth of the bars
-    barWidth = 0.10
+    barWidth = 0.22
 
     # describe where to display p1
     p1 = mp.bar(ran, teensPhonetime, barWidth)
@@ -69,13 +70,7 @@ def graph(): #need to customize to make unique
     # plt.show() # you can try this on a Python IDE with a GUI if you'd like
     mp.savefig("2018summary.pdf")
 
-    
-
-
-
-
-
-
+  
 
 ##############################################################################
 #    * Write a guessing game that uses the crayons library 
@@ -103,7 +98,7 @@ def banner(words):
     print(crayons.blue("******************************************************"))
     print(crayons.red("             "+words +"                         "))
     print(crayons.blue("******************************************************"))
-    print(crayons.blue("******************************************************"))
+    print(crayons.blue("******************************************************\n\n\n\n\n\n"))
     time.sleep(1)
 
 ##############################################################################
