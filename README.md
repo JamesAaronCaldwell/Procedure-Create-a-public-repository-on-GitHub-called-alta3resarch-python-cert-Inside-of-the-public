@@ -7,6 +7,7 @@ Menu has 3 function choices or Q for exiting the application.
 1. Pulls from NASA API then format json to Human readable text and saves to json file
 2. Is a barchart based on minutes of phone usage comparing teens to parents exports to pdf locally                            
 3. Is a guessing game using a while loop and conditionals 
+4. Is showing panda opening an excel file and printing to command line neatly
 Q or q will exit the application
 ######################################################################################################
 ######################################################################################################

@@ -70,7 +70,14 @@ def graph(): #need to customize to make unique
     # plt.show() # you can try this on a Python IDE with a GUI if you'd like
     mp.savefig("2018summary.pdf")
 
-  
+
+##############################################################################
+#uses panda to read excel and print to command line screen.
+##############################################################################
+def readExcel():
+    
+    phonecalls = pd.read_excel('example1.xlsx')
+    print(phonecalls.head())  
 
 ##############################################################################
 #    * Write a guessing game that uses the crayons library 
@@ -96,9 +103,9 @@ def guess():
 def banner(words):
     print(crayons.blue("******************************************************"))
     print(crayons.blue("******************************************************"))
-    print(crayons.red("             "+words +"                         "))
+    print(crayons.red("             "+words+"                         "))
     print(crayons.blue("******************************************************"))
-    print(crayons.blue("******************************************************\n\n\n\n\n\n"))
+    print(crayons.blue("******************************************************\n\n\n"))
     time.sleep(1)
 
 ##############################################################################
@@ -111,7 +118,7 @@ def main():
     banner("Welcome to my Python examples!")
     answer=""
     while answer != "Q" or "q":
-        answer = input(crayons.yellow("Please enter 1, 2 or 3 to run a function.\n To Quit enter q or Q:"))
+        answer = input(crayons.yellow("Please enter 1, 2, 3 or 4 to run a function.\n To Quit enter q or Q:"))
         if answer == "1":
             banner("Starting NASA API Call...")
             nasa()
@@ -127,6 +134,11 @@ def main():
             guess()
             answer = ""
             banner("Guessing Game Example Complete...")
+        elif answer == "4":
+            banner("Read Excel Example...")
+            readExcel()
+            answer = ""
+            banner("Read Excel Example Complete...")
         elif answer == "Q" or answer == "q":
             print(crayons.green("Thanks for playing!!!"))
             banner("James Aaron Caldwell Citigroup...")
